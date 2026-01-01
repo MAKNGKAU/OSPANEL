@@ -1,4 +1,4 @@
-##OSPANEL - Control Center OSIS 🎛️
+## OSPANEL - Control Center OSIS 🎛️
 OSPANEL adalah sistem manajemen jarak jauh berbasis web yang dirancang khusus untuk Sekretariat OSIS SMK "SORE" Tulungagung. Sistem ini berfungsi sebagai jembatan (middleware) yang memungkinkan pengurus untuk menyalakan komputer, mengakses file, dan memantau status perangkat dari jarak jauh melalui jaringan lokal maupun internet (VPN).
 
 ###🚀 Fitur Utama
