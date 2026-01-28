@@ -1,7 +1,7 @@
-## OSPANEL - Control Center OSIS 🎛️
+## OSPANEL - Control Center OSIS
 OSPANEL adalah sistem manajemen jarak jauh berbasis web yang dirancang khusus untuk Sekretariat OSIS SMK "SORE" Tulungagung. Sistem ini berfungsi sebagai jembatan (middleware) yang memungkinkan pengurus untuk menyalakan komputer, mengakses file, dan memantau status perangkat dari jarak jauh melalui jaringan lokal maupun internet (VPN).
 
-### 🚀 Fitur Utama
+### Fitur Utama
 Remote Power Control: Menyalakan PC yang mati total (Wake-on-LAN) dan mematikannya (Remote Shutdown).
 
 Web File Explorer: Menjelajahi, Mengunduh (File/Folder Zip), dan Mengunggah file tanpa akses fisik.
@@ -12,14 +12,14 @@ Smart Polling: Mekanisme hemat daya yang tidak membebani server/klien saat tab t
 
 Secure Access: Terintegrasi dengan Tailscale untuk akses HTTPS aman dari mana saja.
 
-### 🛠️ Arsitektur Sistem
+### Arsitektur Sistem
 Controller (Linux/STB/Raspi): Menjalankan server Python (Flask/Waitress).
 
 Target (Windows PC): Komputer sekretariat yang dikontrol.
 
 Network: Tailscale (VPN Mesh) & LAN.
 
-### 📋 Prasyarat (Requirements)
+### Prasyarat (Requirements)
 
 1. Perangkat Controller (Server)
    OS: Linux (OpenWRT / Armbian / Ubuntu Server / Raspbian).
@@ -35,7 +35,7 @@ Wake-on-LAN (WOL): Harus diaktifkan di BIOS dan Pengaturan Network Adapter.
 
 Static IP: Disarankan menggunakan IP Statis
 
-### ⚙️ Instalasi & Konfigurasi
+### Instalasi & Konfigurasi
 Langkah 1: Persiapan PC Target (Windows)
 Sebelum menjalankan aplikasi, pastikan PC Windows sudah siap menerima perintah:
 
@@ -79,16 +79,16 @@ nano app.py
 
 Sesuaikan bagian berikut dengan data PC Windows Anda:
 
-# --- KONFIGURASI ---
+## --- KONFIGURASI ---
 
-TARGET_MAC = "XX:XX:XX:XX:XX:XX" # MAC Address LAN PC Windows
-TARGET_IP = "192.168.x.x" # IP Address PC Windows
-WIN_USER = "USER" # Username Login Windows
-WIN_PASS = "PASS" # Password Login Windows
-INTERFACE = "eth0" # Interface LAN di Linux (cek dengan `ifconfig`)
-Simpan dengan CTRL+X, lalu Y.
+TARGET_MAC = "XX:XX:XX:XX:XX:XX" # MAC Address LAN PC Windows<br>
+TARGET_IP = "192.168.x.x" # IP Address PC Windows<br>
+WIN_USER = "USER" # Username Login Windows<br>
+WIN_PASS = "PASS" # Password Login Windows<br>
+INTERFACE = "eth0" # Interface LAN di Linux (cek dengan `ifconfig`)<br>
+Simpan dengan CTRL+X, lalu Y.<br>
 
-Langkah 3: Uji Coba Manual
+Langkah 3: Uji Coba Manual<br>
 Jalankan server untuk memastikan tidak ada error:
 
 ```Bash
@@ -97,7 +97,7 @@ python3 app.py
 
 Akses via browser: http://<IP-LINUX>:5000. Jika berhasil, tekan CTRL+C untuk berhenti.
 
-###🤖 Membuat Auto-Start Service (Systemd)
+### 🤖 Membuat Auto-Start Service (Systemd)
 Agar aplikasi berjalan otomatis saat STB/Server dinyalakan, kita akan membuat service Linux.
 
 Buat File Service:
