@@ -1,7 +1,7 @@
 ## OSPANEL - Control Center OSIS 🎛️
 OSPANEL adalah sistem manajemen jarak jauh berbasis web yang dirancang khusus untuk Sekretariat OSIS SMK "SORE" Tulungagung. Sistem ini berfungsi sebagai jembatan (middleware) yang memungkinkan pengurus untuk menyalakan komputer, mengakses file, dan memantau status perangkat dari jarak jauh melalui jaringan lokal maupun internet (VPN).
 
-###🚀 Fitur Utama
+### 🚀 Fitur Utama
 Remote Power Control: Menyalakan PC yang mati total (Wake-on-LAN) dan mematikannya (Remote Shutdown).
 
 Web File Explorer: Menjelajahi, Mengunduh (File/Folder Zip), dan Mengunggah file tanpa akses fisik.
@@ -12,14 +12,14 @@ Smart Polling: Mekanisme hemat daya yang tidak membebani server/klien saat tab t
 
 Secure Access: Terintegrasi dengan Tailscale untuk akses HTTPS aman dari mana saja.
 
-###🛠️ Arsitektur Sistem
+### 🛠️ Arsitektur Sistem
 Controller (Linux/STB/Raspi): Menjalankan server Python (Flask/Waitress).
 
 Target (Windows PC): Komputer sekretariat yang dikontrol.
 
 Network: Tailscale (VPN Mesh) & LAN.
 
-###📋 Prasyarat (Requirements)
+### 📋 Prasyarat (Requirements)
 
 1. Perangkat Controller (Server)
    OS: Linux (OpenWRT / Armbian / Ubuntu Server / Raspbian).
@@ -35,7 +35,7 @@ Wake-on-LAN (WOL): Harus diaktifkan di BIOS dan Pengaturan Network Adapter.
 
 Static IP: Disarankan menggunakan IP Statis
 
-###⚙️ Instalasi & Konfigurasi
+### ⚙️ Instalasi & Konfigurasi
 Langkah 1: Persiapan PC Target (Windows)
 Sebelum menjalankan aplikasi, pastikan PC Windows sudah siap menerima perintah:
 
@@ -143,7 +143,7 @@ sudo systemctl status OSPANEL
 
 Jika statusnya active (running), berarti server sudah berjalan otomatis.
 
-###🌐 Konfigurasi Tailscale & HTTPS
+### 🌐 Konfigurasi Tailscale & HTTPS
 Untuk akses aman dari luar jaringan menggunakan nama domain cantik (MagicDNS) dan HTTPS.
 
 1. Install & Login Tailscale
