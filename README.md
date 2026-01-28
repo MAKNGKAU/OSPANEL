@@ -143,7 +143,7 @@ sudo systemctl status OSPANEL
 
 Jika statusnya active (running), berarti server sudah berjalan otomatis.
 
-### 🌐 Konfigurasi Tailscale & HTTPS
+### Konfigurasi Tailscale & HTTPS
 Untuk akses aman dari luar jaringan menggunakan nama domain cantik (MagicDNS) dan HTTPS.
 
 1. Install & Login Tailscale
